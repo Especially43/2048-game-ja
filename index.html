@@ -1,8 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  <title>2048パズルゲーム - 無料で遊べる脳トレパズル</title>
+
+  <!-- SEO meta tags -->
+  <meta name="description" content="2048パズルゲーム！簡単操作で誰でも楽しめる無料ブラウザゲーム。矢印キーで同じ数字を合わせて、より大きな数字を作ろう。脳トレや暇つぶしにぴったり！スマホでもPC でも遊べます。">
+  <meta name="keywords" content="2048,2048ゲーム,パズル,脳トレ,暇つぶし,無料ゲーム,ブラウザゲーム,計算パズル,数字パズル,頭が良くなるゲーム">
+
+  <!-- SNS シェア用の meta タグ -->
+  <meta property="og:title" content="2048パズルゲーム - 人気の脳トレパズル">
+  <meta property="og:description" content="2048は無料で遊べる人気の脳トレパズルゲーム。同じ数字のタイルを合わせて、2048を目指そう！">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2048game.win/">
+  <meta property="og:image" content="https://2048game.win/meta/og-image.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="2048パズルゲーム - 人気の脳トレパズル">
+  <meta name="twitter:description" content="2048は無料で遊べる人気の脳トレパズルゲーム。同じ数字のタイルを合わせて、2048を目指そう！">
+  <meta name="twitter:image" content="https://2048game.win/meta/og-image.png">
 
   <link href="style/main.css" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="favicon.ico">
@@ -27,8 +44,8 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-      <a class="restart-button">New Game</a>
+      <p class="game-intro">タイルを合わせて<strong>2048</strong>を目指そう！</p>
+      <a class="restart-button">新しいゲーム</a>
     </div>
 
     <div class="game-container">
@@ -73,16 +90,50 @@
     </div>
 
     <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      <strong class="important">遊び方：</strong> <strong>矢印キー</strong>を使ってタイルを動かします。同じ数字のタイルが触れると、<strong>1つのタイルに合体</strong>します！
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+      <strong class="important">ヒント：</strong>
+      <ul>
+        <li>同じ数字のタイルを見つけたら、それらを合体させましょう</li>
+        <li>大きな数字のタイルは端に寄せておくと有利です</li>
+        <li>先を読んで計画的に動かすことが重要です</li>
+      </ul>
     </p>
     <hr>
     <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
+      スマートフォンでも快適に遊べます！
     </p>
+    <hr>
+    <p>
+      © 2024 2048game.win - 無料で遊べる脳トレパズルゲーム
+    </p>
+
+    <div class="game-features">
+      <h2>2048パズルゲームの特徴</h2>
+      <ul>
+        <li>完全無料で遊べる！会員登録不要！</li>
+        <li>スマートフォン、タブレット、PCに対応</li>
+        <li>脳トレ効果で計算力アップ</li>
+        <li>暇つぶしにぴったりの簡単操作</li>
+        <li>オフラインでも遊べる</li>
+      </ul>
+    </div>
+
+    <div class="game-faq">
+      <h2>よくある質問</h2>
+      <dl>
+        <dt>2048はどうやって遊ぶの？</dt>
+        <dd>矢印キーを使って、同じ数字のタイルを合わせるだけ！簡単操作で誰でも楽しめます。</dd>
+        
+        <dt>無料で遊べますか？</dt>
+        <dd>はい、完全無料でお楽しみいただけます。</dd>
+        
+        <dt>スマホでも遊べますか？</dt>
+        <dd>はい、スマートフォンでも快適に遊べます。画面をスワイプして操作できます。</dd>
+      </dl>
+    </div>
   </div>
 
   <script src="js/bind_polyfill.js"></script>
@@ -95,5 +146,22 @@
   <script src="js/local_storage_manager.js"></script>
   <script src="js/game_manager.js"></script>
   <script src="js/application.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "2048パズルゲーム",
+    "applicationCategory": "Game",
+    "genre": "パズルゲーム",
+    "description": "2048は無料で遊べる人気の脳トレパズルゲーム。",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY"
+    },
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript"
+  }
+  </script>
 </body>
 </html>
