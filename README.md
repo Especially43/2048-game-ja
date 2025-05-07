@@ -1,8 +1,8 @@
 # 2048 Puzzle Game / 2048 パズルゲーム
 
-A Japanese-optimized version of the 2048 game, playable at [2048game.win](https://2048game.win)
+A Japanese-optimized version of the 2048 game, playable at [2048game](https://especially43.github.io/2048-game-ja/)
 
-日本語に最適化された2048パズルゲーム、[2048game.win](https://2048game.win) で遊べます！
+日本語に最適化された2048パズルゲーム、[2048game](https://especially43.github.io/2048-game-ja/) で遊べます！
 
 This project is forked from [gabrielecirulli/2048](https://github.com/gabrielecirulli/2048) and optimized for Japanese users.
 
